@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Bank Inside</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center uppercase mt-8">Lets's Get <span class="text-5xl text-violet-800">Money!!</span>
+        </h1>
+    </header>
+    <!-- main section  -->
+    <section class="mt-12">
+        <!-- first row of the table-->
+        <div class="grid grid-cols-3 gap-4  w-9/12 mx-auto text-white">
+            <!--first column of the table-->
+            <div class="bg-lime-600 p-8 rounded-xl">
+                <h1 class="text-2xl text-center">Deposit</h1>
+                <h1 class="text-5xl text-center">$<span id="deposit-total">000</span> </h1>
+            </div>
+            <div class="bg-yellow-500 p-8 rounded-xl">
+                <h1 class="text-2xl text-center">withdraw</h1>
+                <h1 class="text-5xl text-center">$<span id="withdraw-total-Element">000</span> </h1>
+            </div>
+            <div class="bg-violet-800 p-8 rounded-xl">
+                <h1 class="text-2xl text-center">Balance</h1>
+                <h1 class="text-5xl text-center">$<span id="Balance-total">1240</span> </h1>
+            </div>
+        </div>
+    </section>
+    <!--* second row of the table -->
+
+    <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4  w-9/12 mx-auto ">
+            <!--first column of the table-->
+            <div class="bg-emerald-600 p-8 rounded-xl">
+                <h1 class="text-2xl mx-3 text-white">Please Deposit</h1>
+                <input class="block w-9/12 mb-2 mx-3 " type="text" name="" id="Deposit-field"
+                    placeholder="$ Amount You Want To Deposit">
+
+                <button id="btn-deposit"
+                    class="bg-amber-500 text-white px-8 py-2 font-medium hover:bg-purple-800 mx-3 ">Submit</button>
+            </div>
+            <div class="bg-rose-600 p-8 rounded-xl">
+                <h1 class="text-2xl mx-3 text-white">Please withdraw</h1>
+                <input class="block w-9/12 mb-2 mx-3 " type="text" name="" id="withdrow-field"
+                    placeholder="$ Amount You Want To Deposit">
+
+                <button id="btn-withdrow"
+                    class="bg-amber-500 text-white px-8 py-2 font-medium hover:bg-purple-800 mx-3 ">Submit</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script src="../JS/deposit.js"></script>
+    <script src="../JS/withdrow.js"></script>
+</body>
+
+</html>
